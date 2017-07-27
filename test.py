@@ -73,7 +73,7 @@ def crawlerchina(ye,mon):
         else:
             date1='%s/%s/%s' %(year1,month1,day1)
         print('%s downlowing'%(date))
-        browser=Browser("chrome")
+        browser=Browser("phantomjs")
         browser.driver.set_window_size(400, 1600)
         browser.visit("https://www.china-airlines.com/tw/zh?utm_content=RGT-01-140MAR17GOSEM&utm_source=GO&utm_medium=sem&utm_campaign=RGT&utm_number=140")
         browser.find_by_id('From-booking').fill('台北')
@@ -85,11 +85,13 @@ def crawlerchina(ye,mon):
         browser.find_by_xpath('//*[@id="returnDateMobile"]').fill(date1)
         time.sleep(random.uniform(0.1,5))
         browser.find_by_xpath('//*[@id="FlightSearchResultPost"]/div[3]/div/div[5]/a').click()
+        a=browser.html
         while True:
             if browser.is_element_not_present_by_id('#availability')==True:
                 break
-        with open('%s.html','w',encoding="utf-8"%(date)) as f:
-            f.write(browser.html)
+        with open('%s.html'%(date),'w',encoding="utf-8") as f:
+            f.write(a)
+            f.close()
         browser.quit()
         day=1+int(day)#字串轉整數
         day1=1+int(day)
