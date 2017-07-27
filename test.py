@@ -89,9 +89,8 @@ def crawlerchina(ye,mon):
         while True:
             if browser.is_element_not_present_by_id('#availability')==True:
                 break
-        with open('%s.html'%(date),'w',encoding="utf-8") as f:
+        with open('./{}.html'.format(date),'w+',encoding="utf-8") as f:
             f.write(a)
-            f.close()
         browser.quit()
         day=1+int(day)#字串轉整數
         day1=1+int(day)
