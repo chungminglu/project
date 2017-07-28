@@ -91,10 +91,9 @@ def crawlerchina(ye,mon,da):
         count+=1
         while True:
             if browser.is_element_not_present_by_id('#availability')==True:
-                break
-        print(browser.html)        
-        with open('D:/python_workspace/{}{}{}.html'.format(year,month,date),'w',encoding="utf-8") as f:
-            f.write(broweser.html)
+                break     
+        with open('D:/python_workspace/{}{}{}.html'.format(year,month,day),'w',encoding="utf-8") as f:
+            f.write(browser.html)
             f.close()
         
         if(count>=10):#移除這個browser
