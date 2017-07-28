@@ -1,40 +1,47 @@
-[INFO  - 2017-07-27T19:07:27.391Z] GhostDriver - Main - running on port 46843
-[INFO  - 2017-07-27T19:07:28.338Z] Session [d543a7d0-72fe-11e7-b73e-698352093ed7] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-07-27T19:07:28.338Z] Session [d543a7d0-72fe-11e7-b73e-698352093ed7] - page.customHeaders:  - {}
-[INFO  - 2017-07-27T19:07:28.338Z] Session [d543a7d0-72fe-11e7-b73e-698352093ed7] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
-[INFO  - 2017-07-27T19:07:28.338Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d543a7d0-72fe-11e7-b73e-698352093ed7
-[ERROR - 2017-07-27T19:07:32.687Z] Session [d542bd70-72fe-11e7-a435-9505d82f5b51] - page.onError - msg: pause@https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:6480:34
-HV@https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:3408:51
-sV@https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:3383:182
-Vqa@https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:4147:126
-q1@https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:4126:103
-https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:7222:167
-https://www.youtube.com/yts/jsbin/www-embed-player-vfl84H-sg/www-embed-player.js:383:293
+[INFO  - 2017-07-28T03:00:58.566Z] GhostDriver - Main - running on port 50678
+[INFO  - 2017-07-28T03:00:59.742Z] Session [fbc803a0-7340-11e7-a284-0deadea5ddfa] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-07-28T03:00:59.742Z] Session [fbc803a0-7340-11e7-a284-0deadea5ddfa] - page.customHeaders:  - {}
+[INFO  - 2017-07-28T03:00:59.742Z] Session [fbc803a0-7340-11e7-a284-0deadea5ddfa] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
+[INFO  - 2017-07-28T03:00:59.742Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fbc803a0-7340-11e7-a284-0deadea5ddfa
+[ERROR - 2017-07-28T03:01:04.476Z] Session [fbc0b0a0-7340-11e7-a42a-756f068ebae6] - page.onError - msg: pause@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:6495:34
+LV@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3413:51
+wV@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3386:182
+dra@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4157:126
+r1@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4136:103
+https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:7238:167
+https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:373:293
 [native code]
-eb@https://www.youtube.com/yts/jsbin/www-embed-player-vfl84H-sg/www-embed-player.js:384:19
-Rg@https://www.youtube.com/yts/jsbin/www-embed-player-vfl84H-sg/www-embed-player.js:381:147
-ka@https://www.youtube.com/yts/jsbin/www-embed-player-vfl84H-sg/www-embed-player.js:373:160
-https://www.youtube.com/yts/jsbin/www-embed-player-vfl84H-sg/www-embed-player.js:421:197
+cb@https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:374:19
+Fg@https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:371:147
+ja@https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:363:160
+https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:411:197
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:32.687Z] Session [d542bd70-72fe-11e7-a435-9505d82f5b51] - page.onError - stack:
-  (anonymous function) (https://www.youtube.com/yts/jsbin/player-vflxSzRh9/zh_TW/base.js:3786)
+[ERROR - 2017-07-28T03:01:04.477Z] Session [fbc0b0a0-7340-11e7-a42a-756f068ebae6] - page.onError - stack:
+  pause (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:6495)
+  LV (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3413)
+  wV (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3386)
+  dra (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4157)
+  r1 (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4136)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:7238)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:373)
   (anonymous function) (:0)
+  cb (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:374)
+  Fg (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:371)
+  ja (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:363)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:411)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:48.753Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501182468735
+[ERROR - 2017-07-28T03:01:19.393Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501210879359
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:49.506Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501182469495
+[ERROR - 2017-07-28T03:01:20.234Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501210880230
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:50.189Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501182470175
+[ERROR - 2017-07-28T03:01:20.478Z] Session [fbc0b0a0-7340-11e7-a42a-756f068ebae6] - page.onError - msg: ReferenceError: Can't find variable: $
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:50.233Z] Session [d543a7d0-72fe-11e7-b73e-698352093ed7] - page.onError - msg: ReferenceError: Can't find variable: $
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:50.233Z] Session [d543a7d0-72fe-11e7-b73e-698352093ed7] - page.onError - stack:
+[ERROR - 2017-07-28T03:01:20.478Z] Session [fbc0b0a0-7340-11e7-a42a-756f068ebae6] - page.onError - stack:
   global code (https://bookingportal.china-airlines.com/eRetailPortal/Booking.svc/Booking/LateLogin:1)
   insertBefore (:0)
   (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-MKCPLJ:61)
@@ -48,9 +55,26 @@ https://www.youtube.com/yts/jsbin/www-embed-player-vfl84H-sg/www-embed-player.js
   (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-MKCPLJ:42)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:50.425Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501182470402
+[ERROR - 2017-07-28T03:01:20.485Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501210880440
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-27T19:07:50.756Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501182470708
+[ERROR - 2017-07-28T03:01:20.810Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1501210880754
 
   phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-07-28T03:05:58.570Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:10:58.579Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:15:58.593Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:20:58.596Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:25:58.596Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:30:58.611Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:35:58.615Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:40:58.618Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:45:58.632Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:50:58.632Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T03:55:58.632Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T04:00:58.666Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T04:05:58.676Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T04:10:58.676Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T04:15:58.689Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-28T04:20:58.703Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+s - Asynchronous Sessions clean-up phase starting NOW

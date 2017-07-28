@@ -9,7 +9,7 @@ class myThread (threading.Thread):
       self.da=da
    def run (self):
        crawlerchina(self.ye,self.mon,self.da)  
-def crawlerchina(ye,mon,ay):
+def crawlerchina(ye,mon,da):
     import requests
     from bs4 import BeautifulSoup
     import lxml,html5lib
@@ -92,9 +92,11 @@ def crawlerchina(ye,mon,ay):
         while True:
             if browser.is_element_not_present_by_id('#availability')==True:
                 break
-        with open('./{}.html'.format(date),'w',encoding="utf-8") as f:
+        print(browser.html)        
+        with open('D:/python_workspace/{}{}{}.html'.format(year,month,date),'w',encoding="utf-8") as f:
             f.write(broweser.html)
             f.close()
+        
         if(count>=10):#移除這個browser
             browser.quit()
         day=1+int(day)#字串轉整數
