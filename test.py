@@ -23,6 +23,7 @@ def crawlerchina(ye,mon,ay):
     month1=int(mon)
     day1=int(da)+5
     while(True):
+        count=1 #計算這個連線下載次數
         if(month>12):
             year=int(year)+1
             year='%s' %(str(year))
@@ -87,13 +88,15 @@ def crawlerchina(ye,mon,ay):
         time.sleep(random.uniform(0.1,5))
         browser.find_by_xpath('//*[@id="FlightSearchResultPost"]/div[3]/div/div[5]/a').click()
         print(browser.status_code)
+        count+=1
         while True:
             if browser.is_element_not_present_by_id('#availability')==True:
                 break
-        with open('./{}.html'.format(date),'w+',encoding="utf-8") as f:
+        with open('./{}.html'.format(date),'w',encoding="utf-8") as f:
             f.write(broweser.html)
             f.close()
-        browser.quit()
+        if(count>=10):#移除這個browser
+            browser.quit()
         day=1+int(day)#字串轉整數
         day1=1+int(day)
         month=int(month)
