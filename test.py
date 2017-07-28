@@ -1,14 +1,15 @@
 import time
 import threading
 class myThread (threading.Thread):
-   def __init__(self, threadID,ye,mon):
+   def __init__(self, threadID,ye,mon,da):
       threading.Thread.__init__(self)
       self.threadID = threadID
       self.ye = ye
       self.mon= mon
+      self.da=da
    def run (self):
-       crawlerchina(self.ye,self.mon)  
-def crawlerchina(ye,mon):
+       crawlerchina(self.ye,self.mon,self.da)  
+def crawlerchina(ye,mon,ay):
     import requests
     from bs4 import BeautifulSoup
     import lxml,html5lib
@@ -17,10 +18,10 @@ def crawlerchina(ye,mon):
     import random
     year=ye#'''出發時間'''
     month=int(mon)
-    day=1
+    day=int(da)#強轉成整數
     year1=ye#'返回時間'
     month1=int(mon)
-    day1=6
+    day1=int(da)+5
     while(True):
         if(month>12):
             year=int(year)+1
@@ -85,33 +86,34 @@ def crawlerchina(ye,mon):
         browser.find_by_xpath('//*[@id="returnDateMobile"]').fill(date1)
         time.sleep(random.uniform(0.1,5))
         browser.find_by_xpath('//*[@id="FlightSearchResultPost"]/div[3]/div/div[5]/a').click()
-        a=browser.html
+        print(browser.status_code)
         while True:
             if browser.is_element_not_present_by_id('#availability')==True:
                 break
         with open('./{}.html'.format(date),'w+',encoding="utf-8") as f:
-            f.write(a)
+            f.write(broweser.html)
+            f.close()
         browser.quit()
         day=1+int(day)#字串轉整數
         day1=1+int(day)
         month=int(month)
         month1=int(month1)
 if __name__ == '__main__':
-    print("thread 請輸入三個ID,year,month:")
+    print("thread 請輸入三個 year,month,day:")
     a=input()
     b=input()
     c=input()
-    thread1=myThread(a,b,c)
-    print("thread 請輸入三個ID,year,month:")
+    thread1=myThread(1,a,b,c)
+    print("thread 請輸入三個year,month,day:")
     a=input()
     b=input()
     c=input()
-    thread2=myThread(a,b,c)
-    print("thread 請輸入三個ID,year,month:")
+    thread2=myThread(2,a,b,c)
+    print("thread 請輸入三個year,month,day:")
     a=input()
     b=input()
     c=input()
-    thread3=myThread(a,b,c)
+    thread3=myThread(3,a,b,c)
     threads=[]
     try:
         thread1.start()
