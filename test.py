@@ -1,27 +1,27 @@
 import time
 import threading
 class myThread (threading.Thread):
-   def __init__(self, threadID,ye,mon,da):
+   def __init__(self, threadID,year,month,day):
       threading.Thread.__init__(self)
       self.threadID = threadID
-      self.ye = ye
-      self.mon= mon
-      self.da=da
+      self.year = year
+      self.month= month
+      self.day=day
    def run (self):
-       crawlerchina(self.ye,self.mon,self.da)  
-def crawlerchina(ye,mon,da):
+       crawlerchina(self.year,self.month,self.day)  
+def crawlerchina(year,month,day):
     import requests
     from bs4 import BeautifulSoup
     import lxml,html5lib
     from splinter import Browser
     import time
     import random
-    year=ye#'''出發時間'''
-    month=int(mon)
-    day=int(da)#強轉成整數
-    year1=ye#'返回時間'
-    month1=int(mon)
-    day1=int(da)+5
+    year=year     #'''出發時間'''
+    month=int(month)
+    day=int(day)#強轉成整數
+    year1=year#'返回時間'
+    month1=int(month)
+    day1=int(day)+5
     while(True):
         count=1 #計算這個連線下載次數
         if(month>12):
@@ -79,25 +79,28 @@ def crawlerchina(ye,mon,da):
         browser.driver.set_window_size(400, 1600)
         browser.visit("https://www.china-airlines.com/tw/zh?utm_content=RGT-01-140MAR17GOSEM&utm_source=GO&utm_medium=sem&utm_campaign=RGT&utm_number=140")
         browser.find_by_id('From-booking').fill('台北')
-        browser.find_by_xpath('//*[@id="From-booking-suggestions"]/li[1]').click()
         browser.find_by_id('To-booking').fill('大阪-KIX-日本')
         time.sleep( random.uniform(0.1,5))
         browser.find_by_xpath('//*[@id="departureDateMobile"]').fill(date)
         time.sleep(random.uniform(0.1,5))
         browser.find_by_xpath('//*[@id="returnDateMobile"]').fill(date1)
         time.sleep(random.uniform(0.1,5))
+        browser.cookies.delete()        
         browser.find_by_xpath('//*[@id="FlightSearchResultPost"]/div[3]/div/div[5]/a').click()
         print(browser.status_code)
         count+=1
         while True:
-            if browser.is_element_not_present_by_id('#availability')==True:
-                break     
-        with open('D:/python_workspace/{}{}{}.html'.format(year,month,day),'w',encoding="utf-8") as f:
-            f.write(browser.html)
-            f.close()
-        
-        if(count>=10):#移除這個browser
-            browser.quit()
+            if browser.is_element_present_by_text('航班')==True:   
+                with open('./{}{}{}.html'.format(year,month,day),'w') as f:
+                    f.write(browser.html)
+                    f.close()
+                break
+            if browser.is_element_present_by_text('Access To Website Blocked')==True:
+                
+                break 
+#         if(count>=10):#移除這個browser
+#         browser.cookies.delete()
+        browser.quit()
         day=1+int(day)#字串轉整數
         day1=1+int(day)
         month=int(month)
