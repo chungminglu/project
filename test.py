@@ -75,7 +75,8 @@ def crawlerchina(year,month,day):
         else:
             date1='%s/%s/%s' %(year1,month1,day1)
         print('%s downlowing'%(date))
-        browser=Browser("phantomjs")
+        # browser=Browser("chrome")
+        browser=Browser('phantomjs')
         browser.driver.set_window_size(400, 1600)
         browser.visit("https://www.china-airlines.com/tw/zh?utm_content=RGT-01-140MAR17GOSEM&utm_source=GO&utm_medium=sem&utm_campaign=RGT&utm_number=140")
         browser.find_by_id('From-booking').fill('台北')
@@ -91,7 +92,7 @@ def crawlerchina(year,month,day):
         count+=1
         while True:
             if browser.is_element_present_by_text('航班')==True:   
-                with open('./{}{}{}.html'.format(year,month,day),'w') as f:
+                with open('./{}{}{}.html'.format(year,month,day),'w',encoding='utf-8') as f:
                     f.write(browser.html)
                     f.close()
                 break

@@ -1,34 +1,5 @@
-[INFO  - 2017-07-28T19:32:19.956Z] GhostDriver - Main - running on port 35601
-[INFO  - 2017-07-28T19:32:20.898Z] Session [794ffcd0-73cb-11e7-b426-676f964849c2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-07-28T19:32:20.898Z] Session [794ffcd0-73cb-11e7-b426-676f964849c2] - page.customHeaders:  - {}
-[INFO  - 2017-07-28T19:32:20.898Z] Session [794ffcd0-73cb-11e7-b426-676f964849c2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
-[INFO  - 2017-07-28T19:32:20.899Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 794ffcd0-73cb-11e7-b426-676f964849c2
-[ERROR - 2017-07-28T19:32:41.063Z] Session [794ffcd0-73cb-11e7-b426-676f964849c2] - page.onError - msg: pause@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:6495:34
-LV@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3413:51
-wV@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3386:182
-dra@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4157:126
-r1@https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4136:103
-https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:7238:167
-https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:373:293
-[native code]
-cb@https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:374:19
-Fg@https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:371:147
-ja@https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:363:160
-https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:411:197
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-07-28T19:32:41.063Z] Session [794ffcd0-73cb-11e7-b426-676f964849c2] - page.onError - stack:
-  pause (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:6495)
-  LV (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3413)
-  wV (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:3386)
-  dra (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4157)
-  r1 (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:4136)
-  (anonymous function) (https://www.youtube.com/yts/jsbin/player-vflrwQIQw/zh_TW/base.js:7238)
-  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:373)
-  (anonymous function) (:0)
-  cb (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:374)
-  Fg (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:371)
-  ja (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:363)
-  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfllwwkQI/www-embed-player.js:411)
-
-  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-08-01T09:02:04.865Z] GhostDriver - Main - running on port 61643
+[INFO  - 2017-08-01T09:02:06.057Z] Session [178ecab0-7698-11e7-9d5c-ebe7c1c78c65] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-01T09:02:06.058Z] Session [178ecab0-7698-11e7-9d5c-ebe7c1c78c65] - page.customHeaders:  - {}
+[INFO  - 2017-08-01T09:02:06.058Z] Session [178ecab0-7698-11e7-9d5c-ebe7c1c78c65] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
+[INFO  - 2017-08-01T09:02:06.058Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 178ecab0-7698-11e7-9d5c-ebe7c1c78c65
